@@ -32,10 +32,20 @@ const seedDatabase = async () => {
             "name": "Apple",
             "amount": 300
             },
-             {
+            {
             "images": "/images/2.jpg",
             "name": "Strawberry",
             "amount": 150
+            },
+            {
+            "images": "/images/111.jpg", 
+            "name": "Ballari Onion",
+            "amount": 40
+            },
+            {
+            "images": "/images/222.jpg",
+            "name": "Potato",
+            "amount": 43
             },
             {
             "images": "/images/3.jpg",
@@ -43,10 +53,20 @@ const seedDatabase = async () => {
             "amount": 250
             },
             {
+            "images": "/images/1111.jpg",
+            "name": "Radish",
+            "amount": 68
+            },
+            {
             "images": "/images/4.jpg",
             "name": "Banana",
             "amount": 100
             },
+            {
+            "images": "/images/1000.jpg",
+            "name": "Ginger",
+            "amount": 102
+            }, 
             {
             "images": "/images/5.jpg",
             "name": "Mango",
@@ -63,6 +83,11 @@ const seedDatabase = async () => {
             "amount": 150
             },
             {
+            "images": "/images/333.jpg",
+            "name": "Tomato",
+            "amount": 85
+            },
+            {
             "images": "/images/8.jpg",
             "name": "Anjeer",
             "amount": 250
@@ -71,6 +96,16 @@ const seedDatabase = async () => {
             "images": "/images/9.jpg",
             "name": "Guava",
             "amount": 180
+            },
+            {
+            "images": "/images/777.jpeg",
+            "name": "Beetroot",
+            "amount": 49
+            },
+            {
+            "images": "/images/888.jpg", 
+            "name": "Brinjal",
+            "amount": 54
             },
             {
             "images": "/images/10.jpg",
@@ -83,70 +118,35 @@ const seedDatabase = async () => {
             "amount": 350
             },
             {
+            "images": "/images/555.jpg",
+            "name": "Carrot",
+            "amount": 78
+            },
+            {
             "images": "/images/12.jpg",
             "name": "Mangosteen",
             "amount": 400
-            },{
-                "images": "/images/111.jpg", 
-                 "name": "Ballari Onion",
-                 "amount": 40
-                 },
-                  {
-                 "images": "/images/222.jpg",
-                 "name": "Potato",
-                 "amount": 43
-                 },
-                 {
-                 "images": "/images/333.jpg",
-                 "name": "Tomato",
-                 "amount": 85
-                 },
-                 {
-                 "images": "/images/444.png",
-                 "name": "Ladie's Finger",
-                 "amount": 86
-                 },
-                 {
-                 "images": "/images/555.jpg",
-                 "name": "Carrot",
-                 "amount": 78
-                 },
-                 {
-                 "images": "/images/666.jpg",
-                 "name": "Beans",
-                 "amount": 290
-                 },
-                 {
-                 "images": "/images/777.jpeg",
-                 "name": "Beetroot",
-                 "amount": 49
-                 },
-                 {
-                 "images": "/images/888.jpg", 
-                 "name": "Brinjal",
-                 "amount": 54
-                 },
-                 {
-                 "images": "/images/999.png",
-                 "name": "Chilli",
-                 "amount": 118
-                 },
-                 {
-                 "images": "/images/1000.jpg",
-                 "name": "Ginger",
-                 "amount": 102
-                 },
-                 {
-                 "images": "/images/1111.jpg",
-                 "name": "Radish",
-                 "amount": 68
-                 },
-                 {
-                 "images": "/images/2222.jpg",
-                 "name": "Cucumber",
-                 "amount": 80
-                 }];
- 
+            },
+            {
+            "images": "/images/444.png",
+            "name": "Ladie's Finger",
+            "amount": 86
+            },
+            {
+            "images": "/images/666.jpg",
+            "name": "Beans",
+            "amount": 290
+            },
+            {
+            "images": "/images/999.png",
+            "name": "Chilli",
+            "amount": 118
+            },
+            {
+            "images": "/images/2222.jpg",
+            "name": "Cucumber",
+            "amount": 80
+        }];
         await Product.insertMany(products);
         console.log('Database seeded successfully');
       } catch (error) {
